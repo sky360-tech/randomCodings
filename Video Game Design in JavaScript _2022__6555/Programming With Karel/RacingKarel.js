@@ -25,4 +25,4 @@ function moveForward(){
     while(frontIsClear()){
         move();
     }
-}
+}// reviewed: 2026-09-16
