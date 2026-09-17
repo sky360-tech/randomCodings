@@ -30,4 +30,4 @@ function theFinish(){
 	putBall();
 	move();
 	turnRight();
-}
+}// reviewed: 2026-09-17
