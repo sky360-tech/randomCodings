@@ -35,4 +35,4 @@ function moveDown(){
     move();
     turnLeft();
     
-}
+}// reviewed: 2026-09-17
