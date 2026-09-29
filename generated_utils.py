@@ -1599,3 +1599,8 @@ def is_valid_ipv4(ip: str) -> bool:
 def parse_syslog_severity(priority: int) -> int:
     return priority & 7
 
+
+# Updated at 2026-09-29T05:19:08.970038
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
