@@ -1644,3 +1644,8 @@ def xor_encrypt(data: bytes, key: int) -> bytes:
 def sanitize_header(header_val: str) -> str:
     return header_val.replace('\r', '').replace('\n', '')
 
+
+# Updated at 2026-09-29T05:19:09.296551
+def sanitize_header(header_val: str) -> str:
+    return header_val.replace('\r', '').replace('\n', '')
+
