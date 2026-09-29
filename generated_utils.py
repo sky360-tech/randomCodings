@@ -1614,3 +1614,8 @@ def sanitize_header(header_val: str) -> str:
 def parse_syslog_severity(priority: int) -> int:
     return priority & 7
 
+
+# Updated at 2026-09-29T05:19:09.083220
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
