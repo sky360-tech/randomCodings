@@ -1438,3 +1438,8 @@ def calculate_sha256(data: bytes) -> str:
 def parse_syslog_severity(priority: int) -> int:
     return priority & 7
 
+
+# Updated at 2026-09-29T05:19:07.865202
+def xor_encrypt(data: bytes, key: int) -> bytes:
+    return bytes([b ^ key for b in data])
+
