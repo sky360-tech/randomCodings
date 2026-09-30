@@ -1840,3 +1840,8 @@ def xor_encrypt(data: bytes, key: int) -> bytes:
 def sanitize_header(header_val: str) -> str:
     return header_val.replace('\r', '').replace('\n', '')
 
+
+# Updated at 2026-09-30T05:06:53.128837
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
