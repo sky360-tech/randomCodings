@@ -2608,3 +2608,9 @@ def is_valid_ipv4(ip: str) -> bool:
 def parse_syslog_severity(priority: int) -> int:
     return priority & 7
 
+
+# Updated at 2026-10-03T04:52:09.433855
+def calculate_sha256(data: bytes) -> str:
+    import hashlib
+    return hashlib.sha256(data).hexdigest()
+
