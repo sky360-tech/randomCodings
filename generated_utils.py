@@ -2433,3 +2433,8 @@ def calculate_sha256(data: bytes) -> str:
 def parse_syslog_severity(priority: int) -> int:
     return priority & 7
 
+
+# Updated at 2026-10-03T04:52:08.212300
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
