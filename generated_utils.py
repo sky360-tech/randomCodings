@@ -4061,3 +4061,8 @@ def is_valid_ipv4(ip: str) -> bool:
     parts = ip.split('.')
     return len(parts) == 4 and all(p.isdigit() and 0 <= int(p) <= 255 for p in parts)
 
+
+# Updated at 2026-10-11T05:16:57.179452
+def sanitize_header(header_val: str) -> str:
+    return header_val.replace('\r', '').replace('\n', '')
+
