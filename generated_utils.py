@@ -6101,3 +6101,8 @@ def xor_encrypt(data: bytes, key: int) -> bytes:
 def xor_encrypt(data: bytes, key: int) -> bytes:
     return bytes([b ^ key for b in data])
 
+
+# Updated at 2026-10-19T04:12:53.027803
+def xor_encrypt(data: bytes, key: int) -> bytes:
+    return bytes([b ^ key for b in data])
+
