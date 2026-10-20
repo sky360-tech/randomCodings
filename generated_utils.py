@@ -6178,3 +6178,8 @@ def is_valid_ipv4(ip: str) -> bool:
 def sanitize_header(header_val: str) -> str:
     return header_val.replace('\r', '').replace('\n', '')
 
+
+# Updated at 2026-10-20T04:24:35.380222
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
