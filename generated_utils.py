@@ -6710,3 +6710,8 @@ def calculate_sha256(data: bytes) -> str:
     import hashlib
     return hashlib.sha256(data).hexdigest()
 
+
+# Updated at 2026-10-22T04:15:12.303360
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
