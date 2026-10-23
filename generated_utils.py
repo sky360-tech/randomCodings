@@ -6961,3 +6961,9 @@ def calculate_sha256(data: bytes) -> str:
     import hashlib
     return hashlib.sha256(data).hexdigest()
 
+
+# Updated at 2026-10-23T04:19:12.069511
+def calculate_sha256(data: bytes) -> str:
+    import hashlib
+    return hashlib.sha256(data).hexdigest()
+
