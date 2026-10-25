@@ -7590,3 +7590,9 @@ def calculate_sha256(data: bytes) -> str:
 def sanitize_header(header_val: str) -> str:
     return header_val.replace('\r', '').replace('\n', '')
 
+
+# Updated at 2026-10-25T04:12:25.834827
+def calculate_sha256(data: bytes) -> str:
+    import hashlib
+    return hashlib.sha256(data).hexdigest()
+
