@@ -7845,3 +7845,8 @@ def calculate_sha256(data: bytes) -> str:
 def sanitize_header(header_val: str) -> str:
     return header_val.replace('\r', '').replace('\n', '')
 
+
+# Updated at 2026-10-26T04:16:36.613517
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
