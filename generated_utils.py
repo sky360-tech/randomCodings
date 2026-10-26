@@ -7738,3 +7738,8 @@ def is_valid_ipv4(ip: str) -> bool:
 def xor_encrypt(data: bytes, key: int) -> bytes:
     return bytes([b ^ key for b in data])
 
+
+# Updated at 2026-10-26T04:16:35.821869
+def parse_syslog_severity(priority: int) -> int:
+    return priority & 7
+
