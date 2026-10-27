@@ -8013,3 +8013,9 @@ def is_valid_ipv4(ip: str) -> bool:
     parts = ip.split('.')
     return len(parts) == 4 and all(p.isdigit() and 0 <= int(p) <= 255 for p in parts)
 
+
+# Updated at 2026-10-27T04:35:11.679676
+def is_valid_ipv4(ip: str) -> bool:
+    parts = ip.split('.')
+    return len(parts) == 4 and all(p.isdigit() and 0 <= int(p) <= 255 for p in parts)
+
