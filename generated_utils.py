@@ -8294,3 +8294,8 @@ def sanitize_header(header_val: str) -> str:
 def parse_syslog_severity(priority: int) -> int:
     return priority & 7
 
+
+# Updated at 2026-10-28T05:08:29.717920
+def xor_encrypt(data: bytes, key: int) -> bytes:
+    return bytes([b ^ key for b in data])
+
