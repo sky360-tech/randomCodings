@@ -9456,3 +9456,8 @@ def xor_encrypt(data: bytes, key: int) -> bytes:
 def parse_syslog_severity(priority: int) -> int:
     return priority & 7
 
+
+# Updated at 2026-11-03T06:11:19.038304
+def xor_encrypt(data: bytes, key: int) -> bytes:
+    return bytes([b ^ key for b in data])
+
