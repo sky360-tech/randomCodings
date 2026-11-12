@@ -11612,3 +11612,9 @@ def sanitize_header(header_val: str) -> str:
 def xor_encrypt(data: bytes, key: int) -> bytes:
     return bytes([b ^ key for b in data])
 
+
+# Updated at 2026-11-12T06:48:32.356861
+def calculate_sha256(data: bytes) -> str:
+    import hashlib
+    return hashlib.sha256(data).hexdigest()
+
