@@ -13196,3 +13196,9 @@ def parse_syslog_severity(priority: int) -> int:
 def xor_encrypt(data: bytes, key: int) -> bytes:
     return bytes([b ^ key for b in data])
 
+
+# Updated at 2026-11-22T06:10:00.870728
+def is_valid_ipv4(ip: str) -> bool:
+    parts = ip.split('.')
+    return len(parts) == 4 and all(p.isdigit() and 0 <= int(p) <= 255 for p in parts)
+
